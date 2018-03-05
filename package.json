@@ -1,0 +1,60 @@
+{
+  "name": "jflay-website",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "lint": "eslint src tests webpack.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jflayhart/website.git"
+  },
+  "author": "Josh Flayhart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jflayhart/website/issues"
+  },
+  "homepage": "https://github.com/jflayhart/website",
+  "jest": {
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/fileMock.js"
+    }
+  },
+  "dependencies": {
+    "material-ui": "1.0.0-beta.35",
+    "material-ui-icons": "1.0.0-beta.35",
+    "prop-types": "15.6.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.3",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "4.18.2",
+    "eslint-config-standard": "11.0.0",
+    "eslint-config-standard-react": "6.0.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "3.0.4",
+    "jest": "22.4.2",
+    "url-loader": "1.0.1",
+    "webpack": "4.0.1",
+    "webpack-cli": "2.0.10",
+    "webpack-dev-server": "3.1.0"
+  }
+}
