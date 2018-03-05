@@ -13,5 +13,5 @@ export default createMuiTheme({
   },
   typography: {
     fontFamily: 'Orbitron, sans-serif',
-  }
+  },
 })
