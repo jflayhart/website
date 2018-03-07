@@ -4,7 +4,7 @@
   "description": "personal website",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && webpack --mode production",
+    "build": "rm -rf build && webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
     "lint": "eslint src tests webpack.config.js",
     "test": "jest"

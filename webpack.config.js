@@ -2,14 +2,14 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
-module.exports = {
+const config = {
   target: 'web',
   output: {
     filename: 'index.js',
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'build'),
     hot: true,
     compress: true,
     historyApiFallback: true,
@@ -42,3 +42,5 @@ module.exports = {
     }),
   ],
 }
+
+module.exports = config
