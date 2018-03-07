@@ -11,6 +11,9 @@ const styles = theme => ({
     '50%': { transform: 'rotate(-2deg)' },
     '100%': { transform: 'rotate(0deg)' },
   },
+  content: {
+    textAlign: 'center',
+  },
   a: {
     cursor: 'pointer',
     color: theme.palette.secondary.main,
@@ -42,10 +45,12 @@ class Placeholder extends React.Component {
         alignItems="center"
         style={{ width: '100%', height: '100vh' }}
       >
-        <img src={yoshiEgg} width="200" style={{ animation: shakeEgg ? 'shake 0.25s infinite' : 'none' }} />
-        <Typography variant="subheading">
-          Hmm... This site hasn&apos;t <a onClick={this.handleClick} className={classes.a}>hatched</a> quite yet
-        </Typography>
+        <Grid item className={classes.content}>
+          <img src={yoshiEgg} width="200" style={{ animation: shakeEgg ? 'shake 0.25s infinite' : 'none' }} />
+          <Typography variant="subheading">
+            Hmm... This site hasn&apos;t <a onClick={this.handleClick} className={classes.a}>hatched</a> quite yet
+          </Typography>
+        </Grid>
       </Grid>
     )
   }
