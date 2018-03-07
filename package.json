@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf build && webpack --mode production",
+    "deploy": "npm run build && AWS_PROFILE=jflayhart aws s3 cp build s3://aws-website-jflay-p87q7 --recursive --exclude *.DS_Store",
     "start": "webpack-dev-server --mode development --open",
-    "lint": "eslint src tests webpack.config.js",
+    "lint": "eslint .",
     "test": "jest"
   },
   "repository": {

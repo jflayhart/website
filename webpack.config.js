@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
-const config = {
+module.exports = {
   target: 'web',
   output: {
     filename: 'index.js',
@@ -42,5 +42,3 @@ const config = {
     }),
   ],
 }
-
-module.exports = config
