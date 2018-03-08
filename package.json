@@ -1,6 +1,6 @@
 {
   "name": "jflay-website",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "personal website",
   "main": "index.js",
   "scripts": {
