@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Grid from 'material-ui/Grid'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
+import GridLayout from './GridLayout'
+import SocialLinks from './SocialLinks'
 import yoshiEgg from '../../public/img/yoshiegg.png'
 
 const styles = theme => ({
@@ -17,6 +19,8 @@ const styles = theme => ({
   a: {
     cursor: 'pointer',
     color: theme.palette.secondary.main,
+    display: 'inline-block',
+    marginBottom: '40px',
   },
 })
 
@@ -39,19 +43,15 @@ class Placeholder extends React.Component {
     const { shakeEgg } = this.state
 
     return (
-      <Grid
-        container
-        justify="center"
-        alignItems="center"
-        style={{ width: '100%', height: '100vh' }}
-      >
+      <GridLayout centerVertical>
         <Grid item className={classes.content}>
           <img src={yoshiEgg} width="200" style={{ animation: shakeEgg ? 'shake 0.25s infinite' : 'none' }} />
           <Typography variant="subheading">
             Hmm... This site hasn&apos;t <a onClick={this.handleClick} className={classes.a}>hatched</a> quite yet
           </Typography>
+          <SocialLinks />
         </Grid>
-      </Grid>
+      </GridLayout>
     )
   }
 }
