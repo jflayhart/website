@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render valid JSX (snapshot) 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100vh",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <img
+    src="test-file-stub"
+    style={
+      Object {
+        "animation": "",
+      }
+    }
+    width="200"
+  />
+  <div>
+    Hmm... This site hasn't 
+    <span
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "green",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "marginBottom": 20,
+        }
+      }
+    >
+      hatched
+    </span>
+     quite yet
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "0 10px",
+        }
+      }
+    >
+      <a
+        href="https://www.facebook.com/jjflayhart"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="test-file-stub"
+          width="40"
+        />
+      </a>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "0 10px",
+        }
+      }
+    >
+      <a
+        href="https://twitter.com/joshflayhart"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="test-file-stub"
+          width="40"
+        />
+      </a>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "0 10px",
+        }
+      }
+    >
+      <a
+        href="https://www.linkedin.com/in/jflayhart"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="test-file-stub"
+          width="40"
+        />
+      </a>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "0 10px",
+        }
+      }
+    >
+      <a
+        href="https://github.com/jflayhart"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="test-file-stub"
+          width="40"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

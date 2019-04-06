@@ -1,20 +1,11 @@
 import React from 'react'
-import { render } from 'react-dom'
-import { configure, shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import renderer from 'react-test-renderer';
 import { App } from '../src/index'
 
-configure({ adapter: new Adapter() })
 jest.mock('react-dom')
 
-describe('index', () => {
-  it('should render valid JSX', () => {
-    render(<App />, document.createElement('div'))
-  })
-
-  it('should implement theme provider', () => {
-    const wrapper = shallow(<App />)
-    // to be or not to be? make sure to use jest "toBe" NOT enzyme/mocha "to.be" (otherwise undefined)
-    expect(wrapper.find('ThemeProvider').exists()).toBe(true)
-  })
-})
+test('should render valid JSX (snapshot)', () => {
+  const component = renderer.create(<App />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
