@@ -12,9 +12,9 @@ describe('index', () => {
     render(<App />, document.createElement('div'))
   })
 
-  it('should implement material theme provider', () => {
+  it('should implement theme provider', () => {
     const wrapper = shallow(<App />)
     // to be or not to be? make sure to use jest "toBe" NOT enzyme/mocha "to.be" (otherwise undefined)
-    expect(wrapper.find('MuiThemeProvider').exists()).toBe(true)
+    expect(wrapper.find('ThemeProvider').exists()).toBe(true)
   })
 })

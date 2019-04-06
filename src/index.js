@@ -4,11 +4,9 @@ import ThemeProvider from './components/ThemeProvider'
 import Placeholder from './components/Placeholder'
 
 export const App = () => (
-  <Placeholder />
+  <ThemeProvider>
+    <Placeholder />
+  </ThemeProvider>
 )
 
-ReactDOM.render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>
-  , document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))

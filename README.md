@@ -14,7 +14,7 @@ I try to follow best practices in whatever technology I am running with while ke
 ├── src                # react source files
 │   ├── components     # react component files
 │   ├── index.js       # app entry point
-│   └── styles.js      # JSS styles (material ui theming)
+│   └── styles.js      # app theming
 ├── tests              # test files for jest (try to mirror src folder structure)
 └── webpack.config.js  # webpack config for running dev environment and production deploys
 ```
