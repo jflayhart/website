@@ -14,26 +14,20 @@ exports[`should render valid JSX (snapshot) 1`] = `
   }
 >
   <img
+    className="sc-bdVaJa hVsSlj"
     src="test-file-stub"
+  />
+  <div
     style={
       Object {
-        "animation": "",
+        "marginBottom": 25,
       }
     }
-    width="200"
-  />
-  <div>
+  >
     Hmm... This site hasn't 
     <span
+      className="sc-bwzfXH kNXGbJ"
       onClick={[Function]}
-      style={
-        Object {
-          "color": "green",
-          "cursor": "pointer",
-          "display": "inline-block",
-          "marginBottom": 20,
-        }
-      }
     >
       hatched
     </span>
@@ -49,7 +43,7 @@ exports[`should render valid JSX (snapshot) 1`] = `
     <div
       style={
         Object {
-          "margin": "0 10px",
+          "margin": "0 15px",
         }
       }
     >
@@ -67,7 +61,7 @@ exports[`should render valid JSX (snapshot) 1`] = `
     <div
       style={
         Object {
-          "margin": "0 10px",
+          "margin": "0 15px",
         }
       }
     >
@@ -85,7 +79,7 @@ exports[`should render valid JSX (snapshot) 1`] = `
     <div
       style={
         Object {
-          "margin": "0 10px",
+          "margin": "0 15px",
         }
       }
     >
@@ -103,7 +97,7 @@ exports[`should render valid JSX (snapshot) 1`] = `
     <div
       style={
         Object {
-          "margin": "0 10px",
+          "margin": "0 15px",
         }
       }
     >
