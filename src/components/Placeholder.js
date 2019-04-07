@@ -1,43 +1,44 @@
 import React, { useState } from 'react'
-import { withTheme } from './ThemeProvider'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
 import yoshiEgg from '../../public/img/yoshiegg.png'
+import styled, { keyframes } from 'styled-components'
 
-const styles = props => ({
-  shake: {
-    '@keyframes shake': {
-      '0%': { transform: 'rotate(5deg)' },
-      '50%': { transform: 'rotate(-2deg)' },
-      '100%': { transform: 'rotate(0deg)' },
-    },
-  },
-  span: {
-    cursor: 'pointer',
-    color: props.theme.primaryColor,
-    display: 'inline-block',
-    marginBottom: 20,
-  },
-})
+const shakeKeyframe = keyframes`
+  0% { transform: rotate(5deg) }
+  50% { transform: rotate(-2deg) }
+  100% { transform: rotate(0deg) }
+`
 
-const Placeholder = props => {
+const StyledImage = styled.img`
+  width: 200px;
+  animation-name: ${props => props.shake ? shakeKeyframe : ''};
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+`
+
+const StyledSpan = styled.span`
+  cursor: pointer;
+  color: ${props => props.theme.accentColor};
+`
+
+const Placeholder = () => {
   const [shake, setShake] = useState(false)
-  const themedStyle = styles(props)
 
   const handleClick = () => {
     setShake(true)
     setTimeout(() => setShake(false), 300)
   }
-  // TODO add animation
+
   return (
     <GridLayout centerVertical>
-      <img src={yoshiEgg} width="200" style={{ animation: shake ? 'shake 0.25s infinite' : '' }} />
-      <div>
-        Hmm... This site hasn&apos;t <span style={themedStyle.span} onClick={handleClick}>hatched</span> quite yet
+      <StyledImage src={yoshiEgg} shake={shake} />
+      <div style={{ marginBottom: 25 }}>
+        Hmm... This site hasn&apos;t <StyledSpan onClick={handleClick}>hatched</StyledSpan> quite yet
       </div>
       <SocialLinks />
     </GridLayout>
   )
 }
 
-export default withTheme(Placeholder)
+export default Placeholder

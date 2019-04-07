@@ -1,5 +1,5 @@
 export default {
-  primaryColor: 'green',
-  fontColor: 'black',
-  fontFamily: 'Orbitron, sans-serif'
+  fontFamily: 'Orbitron, sans-serif',
+  fontColor: '#333',
+  accentColor: 'green'
 }

@@ -9,7 +9,7 @@ const styles = {
     display: 'flex',
   },
   span: {
-    margin: '0 10px',
+    margin: '0 15px',
   },
 }
 
