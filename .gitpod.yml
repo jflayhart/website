@@ -3,4 +3,4 @@ ports:
 - port: 3000
 - port: 3001
 tasks:
-- command: yarn install
+- command: npm i
