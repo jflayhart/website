@@ -1,0 +1,6 @@
+image: node:10
+ports:
+- port: 3000
+- port: 3001
+tasks:
+- command: yarn install
