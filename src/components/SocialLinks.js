@@ -8,7 +8,7 @@ const styles = {
   container: {
     display: 'flex',
   },
-  span: {
+  icon: {
     margin: '0 15px',
   },
 }
@@ -17,16 +17,16 @@ class SocialLinks extends React.Component {
   render () {
     return (
       <div style={styles.container}>
-        <div style={styles.span}>
+        <div style={styles.icon}>
           <a href="https://www.facebook.com/jjflayhart" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} width="40" /></a>
         </div>
-        <div style={styles.span}>
+        <div style={styles.icon}>
           <a href="https://twitter.com/joshflayhart" target="_blank" rel="noopener noreferrer"><img src={twitterIcon} width="40" /></a>
         </div>
-        <div style={styles.span}>
+        <div style={styles.icon}>
           <a href="https://www.linkedin.com/in/jflayhart" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} width="40" /></a>
         </div>
-        <div style={styles.span}>
+        <div style={styles.icon}>
           <a href="https://github.com/jflayhart" target="_blank" rel="noopener noreferrer"><img src={gitIcon} width="40" /></a>
         </div>
       </div>
