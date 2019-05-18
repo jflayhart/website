@@ -12,12 +12,42 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.fontColor};
     background: #FFFFF8;
   }
+
+  .stripe-one,
+  .stripe-two,
+  .stripe-three,
+  .stripe-four {
+    position: absolute;
+    left: -25%;
+    height: 20px;
+    width: 100%;
+    transform: rotate(-45deg) skew(-45deg);
+  }
+  .stripe-one {
+    background-color: #a0d2c8;
+  }
+  .stripe-two {
+    background-color: #a1d29e;
+    top: 30px;
+  }
+  .stripe-three {
+    background-color: #f16146;
+    top: 60px;
+  }
+  .stripe-four {
+    background-color: #eb1f44;
+    top: 90px;
+  }
 `
 
 export const App = () => (
   <ThemeProvider theme={styles}>
     <Fragment>
       <GlobalStyle />
+      <div className="stripe-one" />
+      <div className="stripe-two" />
+      <div className="stripe-three" />
+      <div className="stripe-four" />
       <Placeholder />
     </Fragment>
   </ThemeProvider>
