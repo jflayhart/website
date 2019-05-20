@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
-import Placeholder from './components/Placeholder'
+import Main from './components/Main'
 import styles from './styles'
 
 const GlobalStyle = createGlobalStyle`
@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.fontColor};
     background: #FFFFF8;
   }
-
   .stripe-one,
   .stripe-two,
   .stripe-three,
@@ -48,7 +47,7 @@ export const App = () => (
       <div className="stripe-two" />
       <div className="stripe-three" />
       <div className="stripe-four" />
-      <Placeholder />
+      <Main />
     </Fragment>
   </ThemeProvider>
 )
