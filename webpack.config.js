@@ -44,7 +44,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
       template: path.join(__dirname, 'public/index.html'),
-      title: 'Josh Flayhart'
+      favicon: 'public/img/favicon.png',
+      title: 'Josh Flayhart',
     })
   ]
 }
