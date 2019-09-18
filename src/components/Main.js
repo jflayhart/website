@@ -12,7 +12,7 @@ const Image = styled.img`
 const Placeholder = () => {
   return (
     <GridLayout centerVertical>
-      <Image src={logo} />
+      <Image src={logo} alt="logo" />
       <SocialLinks />
     </GridLayout>
   )
