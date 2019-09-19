@@ -9,13 +9,11 @@ const Image = styled.img`
   margin-bottom: 2rem;
 `
 
-const Placeholder = () => {
-  return (
-    <GridLayout centerVertical>
-      <Image src={logo} alt="logo" />
-      <SocialLinks />
-    </GridLayout>
-  )
-}
+const Main = () => (
+  <GridLayout centerVertical>
+    <Image src={logo} alt="logo" />
+    <SocialLinks />
+  </GridLayout>
+)
 
-export default Placeholder
+export default Main
