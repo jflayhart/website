@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
-import yoshiEgg from '../../public/img/yoshiegg.png'
+import yoshiEgg from '../../static/img/yoshiegg.png'
 import styled, { keyframes } from 'styled-components'
 
 const shakeKeyframe = keyframes`

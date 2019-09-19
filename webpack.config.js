@@ -11,11 +11,11 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.join(__dirname, 'build')
+    path: path.join(__dirname, 'dist')
   },
   devtool: isProd ? 'source-map' : 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
+    contentBase: path.join(__dirname, 'dist'),
     hot: true,
     compress: true,
     historyApiFallback: true,
@@ -34,7 +34,7 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 8000, // Convert images < 8kb to base64 strings
-            name: 'public/img/[hash]-[name].[ext]'
+            name: 'static/img/[name].[ext]'
           }
         }]
       }
@@ -43,9 +43,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
-      template: path.join(__dirname, 'public/index.html'),
-      favicon: 'public/img/favicon.png',
-      title: 'Josh Flayhart',
+      template: path.join(__dirname, 'index.html')
     })
   ]
 }
