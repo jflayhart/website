@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dist": "rm -rf dist && NODE_ENV=production webpack --mode production",
-    "deploy": "npm run dist && git commit -am 'Deploy site'",
+    "deploy": "npm run dist && npm version patch -m \"Bump version to %s\"",
     "start": "webpack-dev-server --mode development --open",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
