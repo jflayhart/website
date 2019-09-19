@@ -1,7 +1,7 @@
 import React from 'react'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
-import logo from '../../static/img/jf_logo.png'
+import logo from '../../img/jf_logo.png'
 import styled from 'styled-components'
 
 const Image = styled.img`

@@ -1,8 +1,8 @@
 import React from 'react'
-import facebookIcon from '../../static/img/facebook.svg'
-import gitIcon from '../../static/img/github.svg'
-import linkedinIcon from '../../static/img/linkedin.svg'
-import twitterIcon from '../../static/img/twitter.svg'
+import facebookIcon from '../../img/facebook.svg'
+import gitIcon from '../../img/github.svg'
+import linkedinIcon from '../../img/linkedin.svg'
+import twitterIcon from '../../img/twitter.svg'
 
 const styles = {
   container: {
