@@ -5,9 +5,9 @@
   "main": "./src/index.js",
   "scripts": {
     "dist": "rm -rf dist && NODE_ENV=production webpack --mode production",
-    "deploy-patch": "npm run dist && npm version patch && git push",
-    "deploy-minor": "npm run dist && npm version minor && git push",
-    "deploy-major": "npm run dist && npm version major && git push",
+    "deploy-patch": "npm run dist && git commit -am \"Deploy site\" && npm version patch && git push",
+    "deploy-minor": "npm run dist && git commit -am \"Deploy site\" && npm version minor && git push",
+    "deploy-major": "npm run dist && git commit -am \"Deploy site\" && npm version major && git push",
     "start": "webpack-dev-server --mode development --open",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
