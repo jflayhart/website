@@ -4,8 +4,8 @@
   "description": "personal website",
   "main": "./src/index.js",
   "scripts": {
-    "build": "rm -rf build && NODE_ENV=production webpack --mode production",
-    "deploy": "npm run build && AWS_PROFILE=jflayhart aws s3 cp build s3://joshflayhart.me --recursive --exclude *.DS_Store",
+    "dist": "rm -rf dist && NODE_ENV=production webpack --mode production",
+    "deploy": "npm run dist && git commit -am 'Deploy site'",
     "start": "webpack-dev-server --mode development --open",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
