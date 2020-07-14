@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
-import yoshiEgg from '../../img/yoshiegg.png'
 import styled, { keyframes } from 'styled-components'
 
 const shakeKeyframe = keyframes`
@@ -32,7 +31,7 @@ const Placeholder = () => {
 
   return (
     <GridLayout centerVertical>
-      <StyledImage src={yoshiEgg} shake={shake} />
+      <StyledImage src="/images/yoshiegg.png" shake={shake} />
       <div style={{ marginBottom: 25 }}>
         Hmm... This site hasn&apos;t <StyledSpan onClick={handleClick}>hatched</StyledSpan> quite yet
       </div>

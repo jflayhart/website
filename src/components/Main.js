@@ -1,7 +1,6 @@
 import React from 'react'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
-import logo from '../../img/jf_logo.png'
 import styled from 'styled-components'
 
 const Image = styled.img`
@@ -11,7 +10,7 @@ const Image = styled.img`
 
 const Main = () => (
   <GridLayout centerVertical>
-    <Image src={logo} alt="logo" />
+    <Image src="/images/jf_logo.png" alt="logo" />
     <SocialLinks />
   </GridLayout>
 )
