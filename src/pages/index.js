@@ -1,8 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import { ThemeProvider, createGlobalStyle } from 'styled-components'
-import Main from './components/Main'
-import styles from './styles'
+import { createGlobalStyle } from 'styled-components'
+import Main from '../components/Main'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -39,17 +38,15 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const App = () => (
-  <ThemeProvider theme={styles}>
-    <Fragment>
-      <GlobalStyle />
-      <div className="stripe-one" />
-      <div className="stripe-two" />
-      <div className="stripe-three" />
-      <div className="stripe-four" />
-      <Main />
-    </Fragment>
-  </ThemeProvider>
+export const Home = () => (
+  <>
+    <GlobalStyle />
+    <div className="stripe-one" />
+    <div className="stripe-two" />
+    <div className="stripe-three" />
+    <div className="stripe-four" />
+    <Main />
+  </>
 )
 
-ReactDOM.render(<App />, document.getElementById('root'))
+export default Home
