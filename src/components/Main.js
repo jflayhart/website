@@ -9,10 +9,12 @@ const Image = styled.img`
 `
 
 const Main = () => (
-  <GridLayout centerVertical>
-    <Image src="/images/jf_logo.png" alt="logo" />
-    <SocialLinks />
-  </GridLayout>
+  <main>
+    <GridLayout centerVertical>
+      <Image src="/images/jf_logo.png" alt="logo" />
+      <SocialLinks />
+    </GridLayout>
+  </main>
 )
 
 export default Main
