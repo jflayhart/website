@@ -45,9 +45,7 @@ export const Home = () => (
     <div className="stripe-two" />
     <div className="stripe-three" />
     <div className="stripe-four" />
-    <main>
-      <Main />
-    </main>
+    <Main />
   </>
 )
 
