@@ -89,7 +89,9 @@ export default class MyDocument extends Document {
               </li>
             </ul>
           </noscript>
-          <Main />
+          <main>
+            <Main />
+          </main>
           <NextScript />
         </body>
       </Html>
