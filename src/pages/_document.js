@@ -40,7 +40,6 @@ export default class MyDocument extends Document {
           <meta charset="utf-8" />
           <meta name="viewport" content="user-scalable=0, initial-scale=1, minimum-scale=1, width=device-width, height=device-height" />
           <meta name="description" content="Josh Flayhart's personal website for resume, sandboxing, blogging, and anything else techie!" />
-          <title>Josh Flayhart</title>
           <link rel="shortcut icon" href="/favicon.png" />
         </Head>
         <body>
