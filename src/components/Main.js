@@ -11,7 +11,10 @@ const Image = styled.img`
 const Main = () => (
   <main>
     <GridLayout centerVertical>
-      <Image src="/images/jf_logo.png" alt="logo" />
+      <picture>
+        <source srcSet="/images/jf_logo.webp" type="image/webp" />
+        <Image src="/images/jf_logo.png" alt="logo" />
+      </picture>
       <SocialLinks />
     </GridLayout>
   </main>
