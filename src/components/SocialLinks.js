@@ -6,6 +6,8 @@ const styles = {
   },
   icon: {
     margin: '0 15px',
+    width: '40px',
+    height: '40px',
   },
 }
 

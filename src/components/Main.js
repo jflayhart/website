@@ -13,7 +13,7 @@ const Main = () => (
     <GridLayout centerVertical>
       <picture>
         <source srcSet="/images/jf_logo.webp" type="image/webp" />
-        <Image src="/images/jf_logo.png" alt="logo" />
+        <Image src="/images/jf_logo.png" alt="logo" width="200" height="184" />
       </picture>
       <SocialLinks />
     </GridLayout>
