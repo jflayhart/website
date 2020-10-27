@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { createGlobalStyle } from 'styled-components'
 import Main from '../components/Main'
 
@@ -38,7 +37,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const Home = () => (
+export function getStaticProps() {
+  return { props: {} }
+}
+
+const Home = () => (
   <>
     <GlobalStyle />
     <div className="stripe-one" />
