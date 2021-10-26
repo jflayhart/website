@@ -11,6 +11,9 @@ module.exports = {
       config.plugins.push(
         new WorkboxPlugin.GenerateSW({
           swDest: path.join(publicPath, 'service-worker'),
+          modifyUrlPrefix: {
+            '.next': '/_next',
+          },
           skipWaiting: true,
           clientsClaim: true,
           cleanupOutdatedCaches: true,
