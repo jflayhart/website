@@ -11,16 +11,13 @@ module.exports = {
       config.plugins.push(
         new WorkboxPlugin.GenerateSW({
           swDest: path.join(publicPath, 'service-worker'),
+          globPatterns: ['.next/static/*'],
           modifyURLPrefix: {
             '.next': '/_next',
           },
           skipWaiting: true,
           clientsClaim: true,
           cleanupOutdatedCaches: true,
-          exclude: [
-            'react-loadable-manifest.json',
-            'build-manifest.json'
-          ],
         })
       )
     }
