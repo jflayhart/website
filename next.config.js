@@ -3,7 +3,7 @@ const path = require('path')
 const publicPath = 'public'
 
 module.exports = {
-  webpack: (config, { dev, isServer, webpack }) => {
+  webpack: (config, { dev }) => {
     if (!dev) {
       // Service Worker
       // https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin
