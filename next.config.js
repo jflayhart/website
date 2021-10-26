@@ -14,14 +14,15 @@ module.exports = {
           modifyURLPrefix: {
             '.next': '/_next',
           },
+          exclude: [
+            /\.(map|png|jpg|jpeg|svg|webp|xml)$/,
+            'react-loadable-manifest.json',
+            'build-manifest.*',
+            '_buildManifest.*'
+          ],
           skipWaiting: true,
           clientsClaim: true,
-          cleanupOutdatedCaches: true,
-          exclude: [
-            'react-loadable-manifest.json',
-            'build-manifest.json',
-            '_build-manifest.json'
-          ],
+          cleanupOutdatedCaches: true
         })
       )
     }
