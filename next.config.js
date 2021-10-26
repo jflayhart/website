@@ -17,8 +17,8 @@ module.exports = {
           exclude: [
             /\.(map|png|jpg|jpeg|svg|webp|xml)$/,
             'react-loadable-manifest.json',
-            'build-manifest.*',
-            '_buildManifest.*'
+            'build-manifest.json',
+            '_buildManifest.js'
           ],
           skipWaiting: true,
           clientsClaim: true,
