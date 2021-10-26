@@ -13,6 +13,7 @@ module.exports = {
           swDest: path.join(publicPath, 'service-worker'),
           modifyURLPrefix: {
             '.next': '/_next',
+            'static/': '_next/static/',
           },
           exclude: [
             /\.(map|png|jpg|jpeg|svg|webp|xml)$/,
