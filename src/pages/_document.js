@@ -40,10 +40,10 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="description" content="Josh Flayhart's personal website for resume, sandboxing, blogging, and anything else techie!" />
           <link rel="shortcut icon" href="/favicon.png" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <noscript>
-            <img alt="Shipt logo" src="/icons/shipt-logo-192.png" />
             <h1>You must enable JavaScript to use this site</h1>
             <div>
               Please review and follow the instructions provided by your
