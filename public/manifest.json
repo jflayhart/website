@@ -1,0 +1,8 @@
+{
+  "short_name": "jflayhart",
+  "name": "Josh Flayhart",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#a0d2c8",
+  "background_color": "#fffff8"
+}
