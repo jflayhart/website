@@ -19,7 +19,8 @@ module.exports = {
           cleanupOutdatedCaches: true,
           exclude: [
             'react-loadable-manifest.json',
-            '*build-manifest.json'
+            'build-manifest.json',
+            '_build-manifest.json'
           ],
         })
       )
