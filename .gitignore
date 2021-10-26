@@ -3,3 +3,5 @@ out
 .next
 .DS_Store
 .idea
+public/service-worker.*
+public/workbox-*
