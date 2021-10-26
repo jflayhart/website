@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "postbuild": "cp {.next/public/service-worker.js,.next/public/workbox-*.js,} public",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.12.1",
-    "eslint-plugin-react": "^7.21.5"
+    "eslint-plugin-react": "^7.21.5",
+    "workbox-webpack-plugin": "^6.3.0"
   }
 }
