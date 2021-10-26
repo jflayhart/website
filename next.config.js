@@ -14,6 +14,10 @@ module.exports = {
           skipWaiting: true,
           clientsClaim: true,
           cleanupOutdatedCaches: true,
+          exclude: [
+            'react-loadable-manifest.json',
+            'build-manifest.json'
+          ],
         })
       )
     }
