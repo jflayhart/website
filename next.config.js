@@ -16,7 +16,6 @@ module.exports = {
             'static/': '_next/static/',
           },
           exclude: [
-            /\.(map|png|jpg|jpeg|svg|webp|xml)$/,
             'react-loadable-manifest.json',
             'build-manifest.json',
             '_buildManifest.js'
