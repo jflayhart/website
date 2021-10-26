@@ -39,8 +39,10 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="description" content="Josh Flayhart's personal website for resume, sandboxing, blogging, and anything else techie!" />
+          <link rel="apple-touch-icon" href="/favicon.png" />
           <link rel="shortcut icon" href="/favicon.png" />
           <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#a0d2c8" />
         </Head>
         <body>
           <noscript>
