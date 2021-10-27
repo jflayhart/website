@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
 import styled, { keyframes } from 'styled-components'

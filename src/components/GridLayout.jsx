@@ -1,5 +1,3 @@
-import React from 'react'
-
 const styles = props => ({
   display: 'flex',
   flexDirection: props.centerVertical ? 'column' : 'row',
