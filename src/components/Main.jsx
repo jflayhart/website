@@ -1,4 +1,3 @@
-import React from 'react'
 import GridLayout from './GridLayout'
 import SocialLinks from './SocialLinks'
 import styled from 'styled-components'
