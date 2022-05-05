@@ -3,7 +3,6 @@ const path = require('path')
 const publicPath = 'public'
 
 module.exports = {
-  swcMinify: true,
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       // Service Worker

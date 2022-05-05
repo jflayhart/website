@@ -13,7 +13,7 @@ I try to follow best practices in whatever technology I am running with while ke
 ├── src                # react source files
 │   ├── components     # react component files
 │   ├── pages          # pages of the site
-│   └── styles.js      # app theming
+│   └── styles.ts      # app theming
 └── next.config.js     # nextjs config
 ```
 

@@ -5,8 +5,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     margin: 0;
-    font-family: ${props => props.theme.fontFamily};
-    color: ${props => props.theme.fontColor};
+    font-family: ${(props: any) => props.theme.fontFamily};
+    color: ${(props: any) => props.theme.fontColor};
     background: #FFFFF8;
   }
   .stripe-one,

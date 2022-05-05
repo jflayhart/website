@@ -1,4 +1,4 @@
-const styles = props => ({
+const styles = (props: any): any => ({
   display: 'flex',
   flexDirection: props.centerVertical ? 'column' : 'row',
   alignItems: 'center',
@@ -7,7 +7,7 @@ const styles = props => ({
   height: props.centerVertical ? '100vh' : '100%',
 })
 
-const GridLayout = props =>
+const GridLayout = (props: any) =>
   <div style={styles(props)}>
     {props.children}
   </div>

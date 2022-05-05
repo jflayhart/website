@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // "compilerOptions" list must stay in sync with cypress/tsconfig.json, except "types" above.
+    "target": "ES2018", // https://kangax.github.io/compat-table/es2016plus/
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["dom", "dom.iterable", "ESNext"],
+    "allowJs": false, // `true` causes slow compiling during dev
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "src"]
+}

@@ -4,10 +4,11 @@
   "description": "personal website",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && tsc --project tsconfig.server.json",
     "postbuild": "cp {.next/public/service-worker.js,.next/public/workbox-*.js,} public",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node --inspect build/index.js",
+    "lint": "next lint",
+    "validate:ts": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,14 +21,26 @@
   },
   "homepage": "https://github.com/jflayhart/website",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
     "next": "^12.1.5",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^18.1.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@types/cookies": "0.7.6",
+    "@types/cookie-parser": "1.4.2",
+    "@types/express": "4.17.13",
+    "@types/node": "14.14.43",
+    "@types/react": "17.0.7",
+    "@types/react-dom": "17.0.5",
+    "@types/styled-components": "5.1.21",
+    "babel-plugin-styled-components": "2.0.2",
     "eslint": "^8.14.0",
     "eslint-config-next": "^12.1.5",
+    "typescript": "4.3.2",
     "workbox-webpack-plugin": "^6.3.0"
   }
 }
